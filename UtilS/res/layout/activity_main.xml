@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button 
+        android:id="@+id/LoadDict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LoadDict"
+        android:onClick="loaddict"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="searchbegin"
+            android:text="SEARCH" />
+        
+        <EditText
+            android:id="@+id/keysearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/search"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:hint="search" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>
